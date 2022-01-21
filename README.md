@@ -1,3 +1,7 @@
 # my_all_project
 
-writing in progress...
+とりあえず横のrelease見ればわかります
+あとは見て()
+
+
+今記入中
