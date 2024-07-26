@@ -1,0 +1,6 @@
+#> detect:advancement/husbandry/tadpole_in_a_bucket
+
+# すでにオンラインのプレイヤーにadv grant
+advancement grant @a only husbandry/tadpole_in_a_bucket
+# オフラインのプレイヤー用にstorageの中身を書き換えます
+data modify storage adv_share tadpole_in_a_bucket set value 1b

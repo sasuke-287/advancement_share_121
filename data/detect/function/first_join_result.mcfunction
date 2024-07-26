@@ -1,0 +1,129 @@
+#> detect:first_join_result
+
+# 初回join時の処理
+
+# ごめん、どうやっても楽に検知する方法がないからこうするしかねえやｗ
+# まずそもそも解除されてる進捗があるかどうかのデータを処理します
+execute if entity @s[advancements={adventure/adventuring_time=true}] run data modify storage adv_share adventuring_time set value 1b
+execute if entity @s[advancements={adventure/arbalistic=true}] run data modify storage adv_share arbalistic set value 1b
+execute if entity @s[advancements={adventure/avoid_vibration=true}] run data modify storage adv_share avoid_vibration set value 1b
+execute if entity @s[advancements={adventure/blowback=true}] run data modify storage adv_share blowback set value 1b
+execute if entity @s[advancements={adventure/brush_armadillo=true}] run data modify storage adv_share brush_armadillo set value 1b
+execute if entity @s[advancements={adventure/bullseye=true}] run data modify storage adv_share bullseye set value 1b
+execute if entity @s[advancements={adventure/craft_decorated_pot_using_only_sherds=true}] run data modify storage adv_share craft_decorated_pot_using_only_sherds set value 1b
+execute if entity @s[advancements={adventure/crafters_crafting_crafters=true}] run data modify storage adv_share crafters_crafting_crafters set value 1b
+execute if entity @s[advancements={adventure/fall_from_world_height=true}] run data modify storage adv_share fall_from_world_height set value 1b
+execute if entity @s[advancements={adventure/hero_of_the_village=true}] run data modify storage adv_share hero_of_the_village set value 1b
+execute if entity @s[advancements={adventure/honey_block_slide=true}] run data modify storage adv_share honey_block_slide set value 1b
+execute if entity @s[advancements={adventure/kill_a_mob=true}] run data modify storage adv_share kill_a_mob set value 1b
+execute if entity @s[advancements={adventure/kill_all_mobs=true}] run data modify storage adv_share kill_all_mobs set value 1b
+execute if entity @s[advancements={adventure/kill_mob_near_sculk_catalyst=true}] run data modify storage adv_share kill_mob_near_sculk_catalyst set value 1b
+execute if entity @s[advancements={adventure/lighten_up=true}] run data modify storage adv_share lighten_up set value 1b
+execute if entity @s[advancements={adventure/lightning_rod_with_villager_no_fire=true}] run data modify storage adv_share lightning_rod_with_villager_no_fire set value 1b
+execute if entity @s[advancements={adventure/minecraft_trials_edition=true}] run data modify storage adv_share minecraft_trials_edition set value 1b
+execute if entity @s[advancements={adventure/ol_betsy=true}] run data modify storage adv_share ol_betsy set value 1b
+execute if entity @s[advancements={adventure/overoverkill=true}] run data modify storage adv_share overoverkill set value 1b
+execute if entity @s[advancements={adventure/play_jukebox_in_meadows=true}] run data modify storage adv_share play_jukebox_in_meadows set value 1b
+execute if entity @s[advancements={adventure/read_power_of_chiseled_bookshelf=true}] run data modify storage adv_share read_power_of_chiseled_bookshelf set value 1b
+execute if entity @s[advancements={adventure/revaulting=true}] run data modify storage adv_share revaulting set value 1b
+execute if entity @s[advancements={adventure/salvage_sherd=true}] run data modify storage adv_share salvage_sherd set value 1b
+execute if entity @s[advancements={adventure/shoot_arrow=true}] run data modify storage adv_share shoot_arrow set value 1b
+execute if entity @s[advancements={adventure/sleep_in_bed=true}] run data modify storage adv_share sleep_in_bed set value 1b
+execute if entity @s[advancements={adventure/sniper_duel=true}] run data modify storage adv_share sniper_duel set value 1b
+execute if entity @s[advancements={adventure/spyglass_at_dragon=true}] run data modify storage adv_share spyglass_at_dragon set value 1b
+execute if entity @s[advancements={adventure/spyglass_at_ghast=true}] run data modify storage adv_share spyglass_at_ghast set value 1b
+execute if entity @s[advancements={adventure/spyglass_at_parrot=true}] run data modify storage adv_share spyglass_at_parrot set value 1b
+execute if entity @s[advancements={adventure/summon_iron_golem=true}] run data modify storage adv_share summon_iron_golem set value 1b
+execute if entity @s[advancements={adventure/throw_trident=true}] run data modify storage adv_share throw_trident set value 1b
+execute if entity @s[advancements={adventure/totem_of_undying=true}] run data modify storage adv_share totem_of_undying set value 1b
+execute if entity @s[advancements={adventure/trade_at_world_height=true}] run data modify storage adv_share trade_at_world_height set value 1b
+execute if entity @s[advancements={adventure/trade=true}] run data modify storage adv_share trade set value 1b
+execute if entity @s[advancements={adventure/trim_with_all_exclusive_armor_patterns=true}] run data modify storage adv_share trim_with_all_exclusive_armor_patterns set value 1b
+execute if entity @s[advancements={adventure/trim_with_any_armor_pattern=true}] run data modify storage adv_share trim_with_any_armor_pattern set value 1b
+execute if entity @s[advancements={adventure/two_birds_one_arrow=true}] run data modify storage adv_share two_birds_one_arrow set value 1b
+execute if entity @s[advancements={adventure/under_lock_and_key=true}] run data modify storage adv_share under_lock_and_key set value 1b
+execute if entity @s[advancements={adventure/very_very_frightening=true}] run data modify storage adv_share very_very_frightening set value 1b
+execute if entity @s[advancements={adventure/voluntary_exile=true}] run data modify storage adv_share voluntary_exile set value 1b
+execute if entity @s[advancements={adventure/walk_on_powder_snow_with_leather_boots=true}] run data modify storage adv_share walk_on_powder_snow_with_leather_boots set value 1b
+execute if entity @s[advancements={adventure/who_needs_rockets=true}] run data modify storage adv_share who_needs_rockets set value 1b
+execute if entity @s[advancements={adventure/whos_the_pillager_now=true}] run data modify storage adv_share whos_the_pillager_now set value 1b
+execute if entity @s[advancements={end/dragon_breath=true}] run data modify storage adv_share dragon_breath set value 1b
+execute if entity @s[advancements={end/dragon_egg=true}] run data modify storage adv_share dragon_egg set value 1b
+execute if entity @s[advancements={end/elytra=true}] run data modify storage adv_share elytra set value 1b
+execute if entity @s[advancements={end/enter_end_gateway=true}] run data modify storage adv_share enter_end_gateway set value 1b
+execute if entity @s[advancements={end/find_end_city=true}] run data modify storage adv_share find_end_city set value 1b
+execute if entity @s[advancements={end/kill_dragon=true}] run data modify storage adv_share kill_dragon set value 1b
+execute if entity @s[advancements={end/levitate=true}] run data modify storage adv_share levitate set value 1b
+execute if entity @s[advancements={end/respawn_dragon=true}] run data modify storage adv_share respawn_dragon set value 1b
+execute if entity @s[advancements={husbandry/allay_deliver_cake_to_note_block=true}] run data modify storage adv_share allay_deliver_cake_to_note_block set value 1b
+execute if entity @s[advancements={husbandry/allay_deliver_item_to_player=true}] run data modify storage adv_share allay_deliver_item_to_player set value 1b
+execute if entity @s[advancements={husbandry/axolotl_in_a_bucket=true}] run data modify storage adv_share axolotl_in_a_bucket set value 1b
+execute if entity @s[advancements={husbandry/balanced_diet=true}] run data modify storage adv_share balanced_diet set value 1b
+execute if entity @s[advancements={husbandry/bred_all_animals=true}] run data modify storage adv_share bred_all_animals set value 1b
+execute if entity @s[advancements={husbandry/breed_an_animal=true}] run data modify storage adv_share breed_an_animal set value 1b
+execute if entity @s[advancements={husbandry/complete_catalogue=true}] run data modify storage adv_share complete_catalogue set value 1b
+execute if entity @s[advancements={husbandry/feed_snifflet=true}] run data modify storage adv_share feed_snifflet set value 1b
+execute if entity @s[advancements={husbandry/fishy_business=true}] run data modify storage adv_share fishy_business set value 1b
+execute if entity @s[advancements={husbandry/froglights=true}] run data modify storage adv_share froglights set value 1b
+execute if entity @s[advancements={husbandry/kill_axolotl_target=true}] run data modify storage adv_share kill_axolotl_target set value 1b
+execute if entity @s[advancements={husbandry/leash_all_frog_variants=true}] run data modify storage adv_share leash_all_frog_variants set value 1b
+execute if entity @s[advancements={husbandry/make_a_sign_glow=true}] run data modify storage adv_share make_a_sign_glow set value 1b
+execute if entity @s[advancements={husbandry/obtain_netherite_hoe=true}] run data modify storage adv_share obtain_netherite_hoe set value 1b
+execute if entity @s[advancements={husbandry/obtain_sniffer_egg=true}] run data modify storage adv_share obtain_sniffer_egg set value 1b
+execute if entity @s[advancements={husbandry/plant_any_sniffer_seed=true}] run data modify storage adv_share plant_any_sniffer_seed set value 1b
+execute if entity @s[advancements={husbandry/plant_seed=true}] run data modify storage adv_share plant_seed set value 1b
+execute if entity @s[advancements={husbandry/remove_wolf_armor=true}] run data modify storage adv_share remove_wolf_armor set value 1b
+execute if entity @s[advancements={husbandry/repair_wolf_armor=true}] run data modify storage adv_share repair_wolf_armor set value 1b
+execute if entity @s[advancements={husbandry/ride_a_boat_with_a_goat=true}] run data modify storage adv_share ride_a_boat_with_a_goat set value 1b
+execute if entity @s[advancements={husbandry/safely_harvest_honey=true}] run data modify storage adv_share safely_harvest_honey set value 1b
+execute if entity @s[advancements={husbandry/silk_touch_nest=true}] run data modify storage adv_share silk_touch_nest set value 1b
+execute if entity @s[advancements={husbandry/tactical_fishing=true}] run data modify storage adv_share tactical_fishing set value 1b
+execute if entity @s[advancements={husbandry/tadpole_in_a_bucket=true}] run data modify storage adv_share tadpole_in_a_bucket set value 1b
+execute if entity @s[advancements={husbandry/tame_an_animal=true}] run data modify storage adv_share tame_an_animal set value 1b
+execute if entity @s[advancements={husbandry/wax_off=true}] run data modify storage adv_share wax_off set value 1b
+execute if entity @s[advancements={husbandry/wax_on=true}] run data modify storage adv_share wax_on set value 1b
+execute if entity @s[advancements={husbandry/whole_pack=true}] run data modify storage adv_share whole_pack set value 1b
+execute if entity @s[advancements={nether/all_effects=true}] run data modify storage adv_share all_effects set value 1b
+execute if entity @s[advancements={nether/all_potions=true}] run data modify storage adv_share all_potions set value 1b
+execute if entity @s[advancements={nether/brew_potion=true}] run data modify storage adv_share brew_potion set value 1b
+execute if entity @s[advancements={nether/charge_respawn_anchor=true}] run data modify storage adv_share charge_respawn_anchor set value 1b
+execute if entity @s[advancements={nether/create_beacon=true}] run data modify storage adv_share create_beacon set value 1b
+execute if entity @s[advancements={nether/create_full_beacon=true}] run data modify storage adv_share create_full_beacon set value 1b
+execute if entity @s[advancements={nether/distract_piglin=true}] run data modify storage adv_share distract_piglin set value 1b
+execute if entity @s[advancements={nether/explore_nether=true}] run data modify storage adv_share explore_nether set value 1b
+execute if entity @s[advancements={nether/fast_travel=true}] run data modify storage adv_share fast_travel set value 1b
+execute if entity @s[advancements={nether/find_bastion=true}] run data modify storage adv_share find_bastion set value 1b
+execute if entity @s[advancements={nether/find_fortress=true}] run data modify storage adv_share find_fortress set value 1b
+execute if entity @s[advancements={nether/get_wither_skull=true}] run data modify storage adv_share get_wither_skull set value 1b
+execute if entity @s[advancements={nether/loot_bastion=true}] run data modify storage adv_share loot_bastion set value 1b
+execute if entity @s[advancements={nether/netherite_armor=true}] run data modify storage adv_share netherite_armor set value 1b
+execute if entity @s[advancements={nether/obtain_ancient_debris=true}] run data modify storage adv_share obtain_ancient_debris set value 1b
+execute if entity @s[advancements={nether/obtain_blaze_rod=true}] run data modify storage adv_share obtain_blaze_rod set value 1b
+execute if entity @s[advancements={nether/obtain_crying_obsidian=true}] run data modify storage adv_share obtain_crying_obsidian set value 1b
+execute if entity @s[advancements={nether/return_to_sender=true}] run data modify storage adv_share return_to_sender set value 1b
+execute if entity @s[advancements={nether/ride_strider=true}] run data modify storage adv_share ride_strider set value 1b
+execute if entity @s[advancements={nether/ride_strider_in_overworld_lava=true}] run data modify storage adv_share ride_strider_in_overworld_lava set value 1b
+execute if entity @s[advancements={nether/summon_wither=true}] run data modify storage adv_share summon_wither set value 1b
+execute if entity @s[advancements={nether/uneasy_alliance=true}] run data modify storage adv_share uneasy_alliance set value 1b
+execute if entity @s[advancements={nether/use_lodestone=true}] run data modify storage adv_share use_lodestone set value 1b
+execute if entity @s[advancements={story/cure_zombie_villager=true}] run data modify storage adv_share cure_zombie_villager set value 1b
+execute if entity @s[advancements={story/deflect_arrow=true}] run data modify storage adv_share deflect_arrow set value 1b
+execute if entity @s[advancements={story/enchant_item=true}] run data modify storage adv_share enchant_item set value 1b
+execute if entity @s[advancements={story/enter_the_end=true}] run data modify storage adv_share enter_the_end set value 1b
+execute if entity @s[advancements={story/enter_the_nether=true}] run data modify storage adv_share enter_the_nether set value 1b
+execute if entity @s[advancements={story/follow_ender_eye=true}] run data modify storage adv_share follow_ender_eye set value 1b
+execute if entity @s[advancements={story/form_obsidian=true}] run data modify storage adv_share form_obsidian set value 1b
+execute if entity @s[advancements={story/iron_tools=true}] run data modify storage adv_share iron_tools set value 1b
+execute if entity @s[advancements={story/lava_bucket=true}] run data modify storage adv_share lava_bucket set value 1b
+execute if entity @s[advancements={story/mine_diamond=true}] run data modify storage adv_share mine_diamond set value 1b
+execute if entity @s[advancements={story/mine_stone=true}] run data modify storage adv_share mine_stone set value 1b
+execute if entity @s[advancements={story/obtain_armor=true}] run data modify storage adv_share obtain_armor set value 1b
+execute if entity @s[advancements={story/shiny_gear=true}] run data modify storage adv_share shiny_gear set value 1b
+execute if entity @s[advancements={story/smelt_iron=true}] run data modify storage adv_share smelt_iron set value 1b
+execute if entity @s[advancements={story/upgrade_tools=true}] run data modify storage adv_share upgrade_tools set value 1b
+
+# 初回joinedtag付与
+tag @s add Joined
+
+# 進捗更新処理
+function detect:join_result
