@@ -1,5 +1,7 @@
 #> detect:advancement/husbandry/axolotl_in_a_bucket
 
+# 最初に解除した人についてメッセージを流す
+execute unless data storage adv_share axolotl_in_a_bucket run tellraw @a {"text":"","color":"green","extra":[{"selector":"@s"},{"text":"が"},{"text":"axolotl_in_a_bucket","color":"gold"},{"text":"を解除しました"}]}
 # すでにオンラインのプレイヤーにadv grant
 advancement grant @a only husbandry/axolotl_in_a_bucket
 # オフラインのプレイヤー用にstorageの中身を書き換えます

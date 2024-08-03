@@ -1,5 +1,7 @@
 #> detect:advancement/adventure/lighten_up
 
+# 最初に解除した人についてメッセージを流す
+execute unless data storage adv_share lighten_up run tellraw @a {"text":"","color":"green","extra":[{"selector":"@s"},{"text":"が"},{"text":"lighten_up","color":"gold"},{"text":"を解除しました"}]}
 # すでにオンラインのプレイヤーにadv grant
 advancement grant @a only adventure/lighten_up
 # オフラインのプレイヤー用にstorageの中身を書き換えます
